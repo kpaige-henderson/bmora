@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keyperks</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="landing">
+  <header class="site-header">
+    <div class="header-content">
+      <img src="https://via.placeholder.com/100?text=Headshot" alt="Headshot" class="headshot" />
+      <img src="images/logo.PNG" class="logo" alt="logo />
+      <div class="tagline-box">
+        <h1 class="tagline">Homeownership, now a company benefit.</h1>
+        <a href="signin.html" class="btn">SIGN IN / SIGN UP</a>
+      </div>
+  
+      <div class="cta-box">
+        
+      </div>
+    </div>
+
+    <main>
+      <div class="side-by-side-sections">
+             <!-- Mission Section -->
+             <section class="mission">
+              <h2 class="section-title">Our Mission</h2>
+              <p>To make homeownership more accessible for working professionals through turnkey real estate and lending benefits-at no cost to employers.</p>
+            </section>
+        <!-- Benefits Section -->
+        <section class="benefits">
+          <h2 class="section-title">Why Join Keyperks?</h2>
+          <img src="images/benefits.PNG" class="benefits" alt="benefits" />
+        </section>
+    
+   
+      </div>
+    </main>
+    
+    
+
+  <footer class="site-footer">
+    <p>Contact: hello@keyperks.com</p>
+    <div class="socials">
+      <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal on scroll effect
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      for (const el of reveals) {
+        const top = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (top < windowHeight - 100) {
+          el.classList.add("visible");
+        }
+      }
+    });
+  </script>
+</body>
+</html>
